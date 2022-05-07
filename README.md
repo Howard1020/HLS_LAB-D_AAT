@@ -23,5 +23,6 @@
 </code><br><br>
 
 ## Reference
-https://xilinx.github.io/XRT/2021.2/html/xrt_native_apis.html
-https://github.com/Xilinx/Vitis_Accel_Examples/tree/master/host_xrt/streaming_free_running_k2k_xrt
+https://xilinx.github.io/XRT/2021.2/html/xrt_native_apis.html  
+https://github.com/Xilinx/Vitis_Accel_Examples/tree/master/host_xrt/streaming_free_running_k2k_xrt  
+https://www.xilinx.com/applications/data-center/financial-technology/accelerated-algorithmic-trading.html
