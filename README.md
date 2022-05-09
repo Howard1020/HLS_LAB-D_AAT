@@ -1,28 +1,33 @@
 # LAB#D Accelerated Algorithmic Trading Demo
+# Introduction
+The Accelerated Algorithmic Trading Platform (AAT) is an integrated hardware and software solution for the Xilinx® Alveo™ platform. The hardware side includes the network layer and transaction-related modules; the software side provides API and host program shell to set the hardware. However, the entire hardware verification process requires additional network cabling and setup. To simplify the verification process, we removed the network-related kernels and used a simple host program to verify the main transaction-related kernels.
 
-## Build
-<code> 
-&emsp; cd AAT_demo/build/  
+# About this lab
+In this lab, you will run the Accelerated Algorithmic Trading platform provided by Xilinx, and learn about the algorithmic trading process from receiving packets to sending orders, as well as the design of the entire system.
 
-&emsp; ./buildall.sh
-</code><br><br>
+# How to build & run
+build  
+ 
+    $ cd AAT_demo/build/
+    $ ./buildall.sh
 
-## Run Host Program
-<code> 
-&emsp; ./run.sh
-</code><br><br>
+run 
 
-## If you cannot run *.sh
-<code> 
-&emsp; chmod u+x buildall.sh (or run.sh)
-</code><br><br>
+    $ ./run.sh
 
-## You have to reset the FPGA before running Host program
-<code> 
-&emsp; xbutil reset --device
-</code><br><br>
+# Others
+If you cannot run *.sh  
 
-## Reference
-https://xilinx.github.io/XRT/2021.2/html/xrt_native_apis.html  
-https://github.com/Xilinx/Vitis_Accel_Examples/tree/master/host_xrt/streaming_free_running_k2k_xrt  
-https://www.xilinx.com/applications/data-center/financial-technology/accelerated-algorithmic-trading.html
+    $ chmod u+x buildall.sh (or run.sh)
+
+You may need to reset the FPGA before running Host program  
+
+    $ xbutil reset --device
+
+## Using devtoolset-9 bash to avoid compilation problems  
+
+    $ scl enable devtoolset-9 bash
+
+# Reference
+https://xilinx.github.io/XRT/2021.2/html/xrt_native_apis.html
+https://github.com/Xilinx/Vitis_Accel_Examples/tree/master/host_xrt/streaming_free_running_k2k_xrt
