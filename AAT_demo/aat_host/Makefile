@@ -86,10 +86,11 @@ PLATFORM_BLOCKLIST += 2018 qep aws-vu9p-f1 samsung vck zc _u2_ nodma
 CXXFLAGS += -I../common/includes/cmdparser
 CXXFLAGS += -I../common/includes/logger
 CXXFLAGS += -I../common/includes/xcl2
+CXXFLAGS += -I./include/
 CXXFLAGS += -I/tools/Xilinx/Vitis_HLS/2021.2/include/
 HOST_SRCS += ../common/includes/cmdparser/cmdlineparser.cpp ../common/includes/logger/logger.cpp ./host.cpp 
 # Host compiler global settings
-CXXFLAGS += -fmessage-length=0
+CXXFLAGS += -fmessage-length=0 -W
 LDFLAGS += -lrt -lstdc++ 
 LDFLAGS += -luuid -lxrt_coreutil
 
