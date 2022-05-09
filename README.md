@@ -25,7 +25,7 @@ You may need to reset the FPGA before running Host program
     $ xbutil reset --device
 
 ## Using devtoolset-9 bash to avoid compilation problems  
-before you run build & run, Enter the following command.  
+If you use workstation, enter the following command, before running build & run shell.
 
     $ scl enable devtoolset-9 bash
 
